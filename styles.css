@@ -26,3 +26,5 @@ body.theme-night{--paper:#0d1411;--surface:#17211c;--ink:#f0f5ef;--muted:#a5b1a8
 
 .image-fallback{display:grid;place-items:center;width:100%;height:100%;min-height:160px;background:linear-gradient(145deg,#e4ebdf,#d5e0d0);font-size:48px;color:#5c7861}.detail-image-fallback{min-height:220px;border-radius:14px;font-size:20px}.theme-night .image-fallback{background:linear-gradient(145deg,#293a30,#202c25);color:#c6d8c5}
 
+
+.hero-art.hero-brand-art{display:block;width:100%;height:auto;min-height:0;aspect-ratio:3/2;object-fit:contain;overflow:visible;border-radius:0;background:transparent;box-shadow:none;filter:drop-shadow(0 18px 34px #20372712)}
