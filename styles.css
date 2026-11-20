@@ -42,3 +42,8 @@ body.theme-night{--paper:#0d1411;--surface:#17211c;--ink:#f0f5ef;--muted:#a5b1a8
 .brand-pill i{width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#83b844}
 body.theme-night .hero-art.hero-showcase{background:linear-gradient(135deg,#253a2e,#344e37 58%,#50664a);box-shadow:0 24px 58px #0004}body.theme-night .brand-card{background:linear-gradient(145deg,#132c23,#1f3c2c)}
 @media(max-width:560px){.hero-art.hero-showcase{border-radius:clamp(22px,6vw,30px)}.brand-card{left:14%;width:72%;height:68%}.brand-kicker{font-size:clamp(6px,1.7vw,9px)}.brand-message{font-size:clamp(13px,3.5vw,20px);max-width:65%}.brand-tagline{font-size:clamp(8px,1.9vw,11px)}.brand-pill{font-size:clamp(7px,1.8vw,10px);gap:5px;width:43%}.brand-pill i{width:5px;height:5px;flex-basis:5px}}
+
+/* Ajustes de composición para que el mensaje respire en pantallas medianas */
+.brand-message{max-width:67%;font-size:clamp(15px,1.9vw,24px);line-height:1.22;top:43%}
+.brand-pill{width:auto;max-width:calc(100% - 28px);min-height:12.8%;padding:0 17px;font-size:clamp(8px,1vw,13px);gap:7px}
+@media(max-width:560px){.brand-message{max-width:64%;font-size:clamp(12px,3.05vw,17px)}.brand-pill{padding-inline:12px;font-size:clamp(7px,1.7vw,9px);gap:5px}}
