@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f7f2"><meta name="description" content="Catálogo de referencia Rueda: vehículos publicados en fuentes abiertas. Demo pública de solo lectura.">
+<title>Rueda — catálogo de referencia</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#inicio"><span class="mark">↗</span> rueda<span class="lime">.</span></a><nav><a href="#catalogo">Explorar carros</a><a href="#nota">Sobre esta muestra</a></nav><button class="theme" id="theme" aria-label="Cambiar tema">◐ <span>Modo oscuro</span></button></header>
+<main id="inicio">
+<section class="hero"><div class="hero-copy"><span class="eyebrow"><i></i> CATÁLOGO PÚBLICO · SOLO LECTURA</span><h1>Encuentra tu próximo <em>camino.</em></h1><p>Una muestra de vehículos usados en Colombia, con precios observados y referencias para explorar el mercado.</p><a class="primary" href="#catalogo">Explorar vehículos <b>↓</b></a><div class="hero-stats"><span><b id="total">15</b> vehículos de referencia</span><span>Precios en pesos colombianos</span></div></div><div class="hero-art"><div class="art-glow"></div><div class="art-card"><span>RUEDA · COLOMBIA</span><div class="road">↗</div><strong>Más opciones,<br>mejores conexiones.</strong><small>Un mercado en movimiento.</small></div><div class="floating-pill">● Datos de referencia</div></div></section>
+<section class="catalog" id="catalogo"><div class="section-head"><div><span class="eyebrow">OPORTUNIDADES PARA EXPLORAR</span><h2>Catálogo de vehículos</h2><p>Consulta la muestra y filtra por marca, ciudad o precio.</p></div><span class="count" id="count">15 vehículos</span></div>
+<div class="filters"><label class="search"><span>⌕</span><input id="query" placeholder="Busca marca, modelo o versión…" autocomplete="off"><kbd>⌘ K</kbd></label><select id="city"><option value="">Todas las ciudades</option></select><select id="body"><option value="">Todos los tipos</option></select><select id="sort"><option value="recent">Más recientes</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="km">Menor kilometraje</option></select><button class="clear" id="clear">Limpiar</button></div>
+<div class="chips" id="brands"></div><div class="grid" id="grid"><div class="loading">Cargando vehículos…</div></div><div class="empty" id="empty" hidden>No encontramos resultados. Prueba otra búsqueda.</div></section>
+<section class="notice" id="nota"><span class="notice-icon">i</span><div><strong>Una muestra de mercado, no avisos propios de Rueda.</strong><p>Los vehículos, precios e imágenes son referencias de avisos públicos y pueden cambiar o dejar de estar disponibles. La comisión del 3% se muestra como ejemplo orientativo, no como una oferta acordada. Consulta siempre la fuente original antes de tomar una decisión.</p></div></section>
+</main><footer><a class="brand" href="#inicio"><span class="mark">↗</span> rueda<span class="lime">.</span></a><span>© Rueda · Catálogo de referencia</span><a href="#nota">Acerca de esta muestra ↑</a></footer>
+<dialog id="detail"><button class="close" id="close" aria-label="Cerrar">×</button><div id="detail-body"></div></dialog>
+</body></html>
+
