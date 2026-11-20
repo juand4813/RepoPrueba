@@ -11,7 +11,7 @@
           return response.json();
         })
         .then(rows => rows.map((row, index) => ({
-          id: `demo-${index + 1}`,
+          id: `demo-listing-${index + 1}`,
           make: row.make,
           model: row.model,
           trim: row.trim,
@@ -29,7 +29,10 @@
           source_url: row.source,
           source_checked_at: '2026-11-20',
           commission_reference_rate: 3,
-          commission_reference_amount: Math.round(row.price * 0.03 / 1000) * 1000
+          commission_reference_amount: Math.round(row.price * 0.03 / 1000) * 1000,
+          commission_type: 'percentage',
+          commission_value: 3,
+          commission_estimate: Math.round(row.price * 0.03 / 1000) * 1000
         })));
     }
     return catalogPromise;
@@ -92,4 +95,5 @@
     return response({ error: 'Esta función no está disponible en la demostración.' }, 404);
   };
 })();
+
 
