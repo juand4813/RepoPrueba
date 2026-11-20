@@ -25,7 +25,7 @@ const searchTerms=[['Toyota RAV4 XLE','Modelo'],['Mazda 3 Grand Touring','Modelo
 const searchInput=document.getElementById('car-search'),suggestionBox=document.getElementById('suggestions');
 function renderSuggestions(){const q=searchInput.value.trim().toLocaleLowerCase('es');suggestionBox.innerHTML='';if(!q){suggestionBox.classList.remove('show');return}const matches=searchTerms.filter(([label])=>label.toLocaleLowerCase('es').includes(q)).slice(0,5);if(!matches.length){suggestionBox.classList.remove('show');return}matches.forEach(([label,kind])=>{const b=document.createElement('button');b.type='button';b.className='suggestion';b.setAttribute('role','option');b.innerHTML='<span>'+label+'</span><small>'+kind+'</small>';b.addEventListener('click',()=>{searchInput.value=label;suggestionBox.classList.remove('show');window.RuedaApp?.loadListings()});suggestionBox.appendChild(b)});suggestionBox.classList.add('show')}
 searchInput.addEventListener('input',renderSuggestions);searchInput.addEventListener('focus',renderSuggestions);searchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();suggestionBox.classList.remove('show');window.RuedaApp?.loadListings()}if(e.key==='Escape')suggestionBox.classList.remove('show')});document.addEventListener('click',e=>{if(!e.target.closest('.search-item'))suggestionBox.classList.remove('show')});
-</script><script src="preview-adapter.js?v=2"></script><script src="app.js?v=20261120-9"></script><script src="experience.js?v=20261120-3"></script></body></html>
+</script><script src="preview-adapter.js?v=3"></script><script src="app.js?v=20261120-10"></script><script src="experience.js?v=20261120-3"></script></body></html>
 
 
 
